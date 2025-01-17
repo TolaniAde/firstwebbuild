@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Male Human Vector Passport Image</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f4f4f9;
+            box-shadow: 300px;
+        }
+
+        .passport {
+            width: 400px;
+            height: 400px;
+            background-color: #ffffff;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .head {
+            width: 120px;
+            height: 120px;
+            background-color: #000000;
+            border-radius: 50%;
+            position: relative;
+        }
+
+        .hair {
+            width: 0px;
+            height: 0px;
+            background-color: #000000;
+            border-top-left-radius: 60px;
+            border-top-right-radius: 60px;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .eyes {
+            display: flex;
+            justify-content: space-between;
+            position: absolute;
+            top: 50px;
+            left: 30px;
+            width: 60px;
+        }
+
+        .eye {
+            width: 12px;
+            height: 12px;
+            background-color: #000;
+            border-radius: 0%;
+        }
+
+        .nose {
+            width: 0px;
+            height: 0px;
+            background-color: #000000;
+            border-radius: 50%;
+            position: absolute;
+            top: 80px;
+            left: 56px;
+        }
+
+        .mouth {
+            width: 40px;
+            height: 10px;
+            background-color: #d28f6d;
+            border-radius: 10px;
+            position: absolute;
+            top: 100px;
+            left: 40px;
+        }
+
+        .body {
+            width: 200px;
+            height: 150px;
+            background-color: #000000;
+            border-top-left-radius: 30px;
+            border-top-right-radius: 30px;
+            margin-top: -20px;
+            position: relative;
+            shadow: 20%;
+        }
+
+        .collar {
+            width: 0px;
+            height: 0px;
+            background-color: #ffffff;
+            position: absolute;
+            top: -20px;
+            left: 35px;
+            clip-path: polygon(0 0, 50% 100%, 100% 0);
+        }
+
+        .text {
+            margin-top: 10px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, sans-serif;
+            font-size: 15px;
+            color: #333;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="passport">
+        <!-- Head -->
+        <div class="head">
+            <div class="hair"></div>
+            <div class="eyes">
+                <div class="eye"></div>
+                <div class="eye"></div>
+            </div>
+            <div class="nose"></div>
+            <div class="mouth"></div>
+        </div>
+
+        <!-- Body -->
+        <div class="body">
+            <div class="collar"></div>
+        </div>
+
+        <!-- Text -->
+        <div class="text">
+            <p>Tolani A.</p>
+            <p> <b>07045044286, 08121122730</b> </p>
+        </div>
+    </div>
+</body>
+</html>

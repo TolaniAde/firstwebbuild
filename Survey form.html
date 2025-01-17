@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="Survey form.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+</head>
+<body>
+  <header>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">We value your feedback! Please fill out this form.</p>
+  </header>
+
+  <main>
+    <form id="survey-form">
+      <!-- Name Field -->
+      <label id="name-label" for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+      <!-- Email Field -->
+      <label id="email-label" for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+      <!-- Number Field -->
+      <label id="number-label" for="number">Age (optional):</label>
+      <input type="number" id="number" name="age" placeholder="Enter your age" min="1" max="120">
+
+      <!-- Dropdown Field -->
+      <label for="dropdown">What is your role?</label>
+      <select id="dropdown" name="role">
+        <option value="student">Student</option>
+        <option value="professional">Professional</option>
+        <option value="Staff">Staff</option>
+        <option value="other">Other</option>
+      </select>
+
+      <!-- Radio Buttons -->
+      <p>How did you hear about us?</p>
+      <div class="radio-group">
+        <p>Social Media:</p>
+  <label>
+    <input type="radio" name="social-media" value="Facebook"> Facebook
+  </label>
+  <label>
+    <input type="radio" name="social-media" value="Twitter"> Twitter
+  </label>
+  <label>
+    <input type="radio" name="social-media" value="Instagram"> Instagram
+  </label>
+</div>
+      </div>
+      <input type="radio" id="social-media" name="referral" value="social-media" required>
+      <label for="social-media">Social Media</label><br>
+      <input type="radio" id="friend" name="referral" value="friend" required>
+      <label for="friend">Friend</label><br>
+
+      <!-- Checkboxes -->
+      <p>What do you like about our service? (Select all that apply)</p>
+      <input type="checkbox" id="speed" name="features" value="speed">
+      <label for="speed">Speed</label><br>
+      <input type="checkbox" id="quality" name="features" value="quality">
+      <label for="quality">Quality</label><br>
+
+      <!-- Textarea Field -->
+      <label for="comments">Additional Comments:</label>
+      <textarea id="comments" name="comments" placeholder="Enter your comments here..."></textarea>
+
+      <!-- Submit Button -->
+      <button id="submit" type="submit">Submit</button>
+    </form>
+  </main>
+</body>
+</html>
